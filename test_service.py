@@ -8,18 +8,18 @@ from service import handler
 
 
 @pytest.fixture
-def event():
+def event(monkeypatch):
+    monkeypatch.setenv("slackChannel", "external-monitors")
+    monkeypatch.setenv("hookUrl", "hooks.slack.com/services/abc")
     with open("event.json") as f:
         event = json.load(f)
     return event
 
 
 @vcr.use_cassette()
-def test_handler(monkeypatch, event):
+def test_handler(event):
     """Reads from the `test_handler` cassette and processes the request
     """
-    monkeypatch.setenv("slackChannel", "external-monitors")
-    monkeypatch.setenv("hookUrl", "hooks.slack.com/services/abc")
     assert handler(event, None) is True
 
 
