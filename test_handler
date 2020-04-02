@@ -1,0 +1,57 @@
+interactions:
+- request:
+    body: '{"channel": "external-monitors", "text": "TESTING Lambda Errors state is
+      now TEST: Just testing....."}'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '102'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - hooks.slack.com
+      User-Agent:
+      - Python-urllib/3.8
+    method: POST
+    uri: https://hooks.slack.com/services/abc
+  response:
+    body:
+      string: ok
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - close
+      Content-Type:
+      - text/html
+      Date:
+      - Thu, 02 Apr 2020 16:06:13 GMT
+      Referrer-Policy:
+      - no-referrer
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 7a21e9c0eca084f9537ebb23906ea9ff.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - iYCzDWJllbdM5BhcDCmh8HGbtDVKJFcUXBYTKYd7bSSXCiu_gZnnQg==
+      X-Amz-Cf-Pop:
+      - SFO20-C1
+      X-Cache:
+      - Miss from cloudfront
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Slack-Backend:
+      - h
+      X-Via:
+      - haproxy-www-4kab
+    status:
+      code: 200
+      message: OK
+version: 1

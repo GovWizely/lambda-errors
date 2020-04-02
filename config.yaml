@@ -1,0 +1,10 @@
+region: us-east-1
+
+function_name: lambdaErrors
+handler: service.handler
+role: lambda_api
+description: Notifies Slack channel about failing lambdas
+runtime: python3.8
+
+timeout: 300
+memory_size: 128
