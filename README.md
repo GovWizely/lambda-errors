@@ -1,5 +1,5 @@
 [![CircleCI](https://circleci.com/gh/GovWizely/lambda-errors/tree/master.svg?style=svg)](https://circleci.com/gh/GovWizely/lambda-errors/tree/master)
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/65084271b7520819af09/maintainability)](https://codeclimate.com/github/GovWizely/lambda-errors/maintainability)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=GovWizely/lambda-errors)](https://dependabot.com)
 
 # Lambda Errors
